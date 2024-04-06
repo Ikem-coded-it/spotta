@@ -1,10 +1,18 @@
-import SpottaLogo from "../logo";
+import SearchBar from "../search-bar";
 import Image from "next/image";
+import SpottaLogo from "../logo";
 
-export default function HomepageNav() {
+export default function ReviewsPageNav() {
     return (
-        <nav className="flex justify-between items-center h-[50px] bg-whiteBg w-full mb-5 fixed top-0 left-0 px-[15px] md:px-[50px] lg:px-[50px] z-50">
+        <nav className="flex justify-between items-center h-[82px] bg-whiteBg w-full mb-5 fixed top-0 left-0 px-[15px] md:px-[50px] lg:px-[50px] z-50">
             <SpottaLogo/>
+
+            <SearchBar
+            type="search"
+            inputClassName="bg-[#FBFAFC] w-[240px] md:w-[300px]"
+            containerClassName="bg-[#FBFAFC]"
+            inputValue="Bonny and Clyde Street, Ajao Estate, Lagos"
+            />
 
             <div className="flex justify-between items-center gap-3">
                 <p className="font[500] text-base">Welcome!</p>

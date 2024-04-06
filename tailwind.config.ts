@@ -16,7 +16,7 @@ const config: Config = {
 
       colors: {
         "whiteBg": "#FAFCFD",
-        "blueBg": "#5378F6",
+        "blueBg": "#3366FF",
         "darkFont": "#101012"
       }
     },
