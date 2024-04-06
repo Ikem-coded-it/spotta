@@ -3,7 +3,7 @@ import { review, reviewCategories } from "@/app/lib/store/review"
 
 export default function HomePageReviews() {
     return(
-        <section className="flex flex-col md:flex-row justify-between items-center gap-[20px] w-full lg:w-[45%] bg-[#e5eaf5] relative">
+        <section className="flex flex-col md:flex-row md:justify-center lg:justify-between md:gap-10 lg:gap-0 items-center w-full lg:w-[43%] bg-[#e5eaf5] relative">
             <div className="h-full w-full absolute bg-gradient-to-b from-[#FAFCFD] via-transparent to-[#FAFCFD] z-10"/>
             <div className="flex flex-col gap-[20px] justify-center">
                 {

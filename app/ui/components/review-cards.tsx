@@ -9,9 +9,7 @@ import { Review } from "@/app/lib/definitions";
 export default function HomepageReviewCard({
     category,
     ...props
-}: {
-    category: string
-}) {
+}: Review) {
     return(
         <div className="w-[239px] h-[233px] flex flex-col items-center justify-start gap-2 rounded-[15px] bg-[#FAFCFD] drop-shadow-md p-[16px]">
             <div className="w-full h-fit flex justify-between items-center">
