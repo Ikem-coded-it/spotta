@@ -7,7 +7,7 @@ import { Review } from "@/app/lib/definitions";
 
 
 export default function HomepageReviewCard({
-    category,
+    amenity,
     ...props
 }: Review) {
     return(
@@ -18,7 +18,7 @@ export default function HomepageReviewCard({
                     width={25}
                     height={25}
                     className="w-[25px] h-[25px] rounded-[50%]"
-                    src={props?.imageURL}
+                    src={props?.reviewerImageURL}
                     alt="profile of girl"
                     objectPosition="center"
                     objectFit="center"
@@ -71,13 +71,13 @@ export default function HomepageReviewCard({
 
                 <div className={clsx(
                     "h-[14px] w-[43px] flex justify-center items-center text-[9px] font-[500] text-[#1F4781] border-[1px] rounded-[7px]",
-                    {"bg-[#F5E9CB] border-[#A07C22]": category === 'traffic'},
-                    {"bg-[#D1E4FA] border-[#2863B8]": category === 'water'},
-                    {"bg-[#F3DFCC] border-[#B26D22]": category === 'road'},
-                    {"bg-[#FCDCEF] border-[#AD307B]": category === 'network'},
-                    {"bg-[#F66A57]": category === 'power'},
+                    {"bg-[#F5E9CB] border-[#A07C22]": amenity === 'traffic'},
+                    {"bg-[#D1E4FA] border-[#2863B8]": amenity === 'water'},
+                    {"bg-[#F3DFCC] border-[#B26D22]": amenity === 'road'},
+                    {"bg-[#FCDCEF] border-[#AD307B]": amenity === 'network'},
+                    {"bg-[#F66A57]": amenity === 'power'},
                 )}>
-                    {category}
+                    {amenity}
                 </div>
             </div>
         </div>

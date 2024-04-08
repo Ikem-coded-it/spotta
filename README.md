@@ -1,9 +1,9 @@
 ### SOLUTION TO TECHNICAL TEST FROM DASH
 
-[Demo]()
+[View Demo](https://spotta-dash.vercel.app/)
 
 ## DOCUMENTATION
-
+- I added a link to the reviews page in the navbar to make navigation easier.
 - I'm making use of the nextjs app router therefore all page files are located within the `app` folder.
 - Besides page folders, the `app` folder contains two more important folder
 1) **lib folder**: This contains utils, type definitions and storage folder for static data used in the app.

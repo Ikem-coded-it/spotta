@@ -3,6 +3,7 @@ import Button from "../components/button";
 import { CiBookmark } from "react-icons/ci";
 import { IoShareSocialOutline } from "react-icons/io5";
 import { locationAmenities } from "@/app/lib/store/location";
+import Link from "next/link"
 
 export default function LocationInfo() {
     return (
@@ -19,10 +20,12 @@ export default function LocationInfo() {
                 </div>
 
                 <div className="flex items-start justify-end gap-4">
-                    <Button
-                    text="leave a review"
-                    className="w-[140px] md:w-[210px]"
-                    />
+                    <Link href="/locations/bonny-and-clyde/reviews/create">
+                        <Button
+                        text="leave a review"
+                        className="w-[140px] md:w-[210px]"
+                        />
+                    </Link>
 
                     <Button className="w-[56px] bg-transparent">
                         <CiBookmark color="#3366FF" size="24px"/>

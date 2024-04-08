@@ -5,7 +5,7 @@ import { FaRegCommentAlt } from "react-icons/fa";
 import { Review } from "@/app/lib/definitions";
 
 export default function ReviewPageReviewCard({
-    imageURL,
+    reviewerImageURL,
     body,
     reviewerName,
     time,
@@ -23,7 +23,7 @@ export default function ReviewPageReviewCard({
                     width={25}
                     height={25}
                     className="w-[25px] h-[25px] rounded-[50%]"
-                    src={imageURL}
+                    src={reviewerImageURL}
                     alt="profile of girl"
                     objectPosition="center"
                     objectFit="center"

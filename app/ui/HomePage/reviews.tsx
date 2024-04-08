@@ -1,5 +1,5 @@
 import HomepageReviewCard from "../components/review-cards"
-import { review, reviewCategories } from "@/app/lib/store/review"
+import { review, reviewAmenities } from "@/app/lib/store/review"
 
 export default function HomePageReviews() {
     return(
@@ -8,11 +8,11 @@ export default function HomePageReviews() {
             <div className="flex flex-col gap-[20px] justify-center">
                 {
                     Array.from({ length: 6 }, (_, i) => {
-                        const category = reviewCategories[i]
+                        const amenity = reviewAmenities[i]
                         return (
                             <HomepageReviewCard
                             key={i}
-                            category={category as typeof category}
+                            amenity={amenity as typeof amenity}
                             {...(review ?? {})}
                             />
                         )
@@ -23,11 +23,11 @@ export default function HomePageReviews() {
             <div className="flex flex-col gap-[20px] justify-center">
                 {
                     Array.from({ length: 6 }, (_, i) => {
-                        const category = reviewCategories[i+1]
+                        const amenity = reviewAmenities[i+1]
                         return (
                             <HomepageReviewCard
                             key={i}
-                            category={category as typeof category}
+                            amenity={amenity as typeof amenity}
                             {...(review ?? {})}
                             />
                         )

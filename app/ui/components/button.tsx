@@ -6,16 +6,18 @@ export default function Button({
     type,
     className,
     onClick,
-    children
+    children,
+    disabled
 }: {
     text?: string
     type?: 'button' | 'submit' | 'reset'
     className?: string
     onClick?: MouseEventHandler<HTMLButtonElement>
     children?: ReactNode
+    disabled?: boolean
 }) {
     const mergedClasses = cn(
-        "flex justify-center items-center h-[50px] w-[146px] rounded-[6px] gap-[10px] bg-blueBg text-white text-sm md:text-base font-[500] border-[1px] border-blueBg p-0 hover:scale-105 duration-[.5s]",
+        "flex justify-center items-center h-[50px] w-[146px] rounded-[6px] gap-[10px] bg-blueBg text-white text-sm md:text-base font-[500] border-[1px] border-blueBg p-0 hover:scale-[1.03] duration-[.3s]",
         className
     )
     return(
@@ -23,6 +25,7 @@ export default function Button({
         className={mergedClasses}
         type={type ?? 'button'}
         onClick={onClick}
+        disabled={disabled ?? false}
         >
             {children}
             {text?.toUpperCase()}

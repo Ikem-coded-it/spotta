@@ -2,11 +2,13 @@ export type Review = {
     reviewerName: string
     address: string
     starReview: number
-    time: string,
+    time: string | null,
     body: string,
     likes: number,
     dislikes: number,
     comments: number,
-    imageURL: string
-    category?: string
+    reviewerImageURL: string,
+    anonymous?: boolean,
+    amenities?: string[]
+    amenity?: string
 }
