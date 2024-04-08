@@ -10,6 +10,7 @@ export default function AnonymousCheckbox() {
             id="anonymous"
             onChange={handleChange}
             onBlur={handleBlur}
+            className="cursor-pointer"
             />
 
             <label

@@ -25,8 +25,6 @@ export default function ReviewPageReviewCard({
                     className="w-[25px] h-[25px] rounded-[50%]"
                     src={reviewerImageURL}
                     alt="profile of girl"
-                    objectPosition="center"
-                    objectFit="center"
                     />
 
                     <div className="flex items-center justify-start gap-1">

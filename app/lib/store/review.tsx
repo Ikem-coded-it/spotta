@@ -22,7 +22,7 @@ export const initialReviewValues = {
     starReview: 0,
     reviewerName: "John T.", // gets pulled from auth
     address: "Bonny and Clyde Street, Ajao Estate, Lagos.",
-    time: null,
+    time: "1 hour ago",
     likes: 25, // default
     dislikes: 2,
     comments: 125,

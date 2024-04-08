@@ -58,6 +58,7 @@ export default function CustomSelectInput() {
                                 name="amenities"
                                 id={`amenities_${i}`}
                                 onChange={(e) => updateAmenities(e, amenity)}
+                                className="cursor-pointer"
                                 />
 
                                 <label

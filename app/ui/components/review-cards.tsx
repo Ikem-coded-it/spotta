@@ -20,8 +20,6 @@ export default function HomepageReviewCard({
                     className="w-[25px] h-[25px] rounded-[50%]"
                     src={props?.reviewerImageURL}
                     alt="profile of girl"
-                    objectPosition="center"
-                    objectFit="center"
                     />
 
                     <div className="flex flex-col items-center">

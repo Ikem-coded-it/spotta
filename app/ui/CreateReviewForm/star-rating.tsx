@@ -27,6 +27,7 @@ export default function StarRatingInput() {
                             <div key={i} className="h-fit w-fit">
                                 <label
                                 onClick={() => setRating(starValue)}
+                                className="cursor-pointer"
                                 >
                                     <IoIosStar 
                                     size="20px"
