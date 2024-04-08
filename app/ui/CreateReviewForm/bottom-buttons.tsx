@@ -16,7 +16,7 @@ export default function BottomButtons() {
         try {
             if (values?.anonymous  === true) {
                 values.reviewerName = 'Anonymous'
-                values.reviewerImageURL = 'https://th.bing.com/th/id/OIP.0TsJGYhWWOy_hBFOH0hX-gHaHa?rs=1&pid=ImgDetMain'
+                values.reviewerImageURL = '/default-profile.png'
             }
             console.log(values)
             const response = await storeReview(values)
