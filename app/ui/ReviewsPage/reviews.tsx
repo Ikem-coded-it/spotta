@@ -7,7 +7,7 @@ export default async function Reviews() {
     return (
         <section className="flex-1 max-w-[622px] h-fit flex flex-col gap-4 justify-start items-start">
             {
-                reviews.map((review: any, idx: any) => {
+                reviews?.map((review: any, idx: any) => {
                     review['reviewerImageURL'] = review['reviewer_image_url']
                     review['starReview'] = review['star_review']
                     review['reviewerName'] = review['reviewer_name']

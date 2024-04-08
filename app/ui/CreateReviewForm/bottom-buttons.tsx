@@ -37,7 +37,7 @@ export default function BottomButtons() {
             type="submit"
             className="w-[312px]"
             onClick={() => handleUploadReview()}
-            // disabled={isSubmitting  === true ? true : false}
+            disabled={isSubmitting  === true ? true : false}
             />
 
             <Link href="/locations/bonny-and-clyde/reviews">
