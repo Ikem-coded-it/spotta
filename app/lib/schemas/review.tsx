@@ -7,8 +7,8 @@ const ReviewSchema = yup.object().shape({
     .min(1, "*Required")
     .required('*Required'),
   body: yup.string()
-    .min(3, "too short")
-    .max(150, "too big")
+    .min(3, "*Too short")
+    .max(400, "*Exceeded limit")
     .required('*Required'),
   reviewerName:  yup.string()
     .required('Reviewer name is required'),
