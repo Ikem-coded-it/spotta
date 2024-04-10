@@ -39,7 +39,7 @@ export default function ReviewPageReviewCard({
                 </div>
             </div>
 
-            <p className="text-base text-[#18181B]">
+            <p className="text-base text-[#18181B] w-full break-words text-wrap">
                 {body}
             </p>
 

@@ -5,7 +5,7 @@ import { getReviews } from "@/app/lib/actions";
 export default async function Reviews() {
     const reviews = await getReviews()
     return (
-        <section className="flex-1 max-w-[622px] h-fit flex flex-col gap-4 justify-start items-start">
+        <section className="flex-1 max-w-full lg:max-w-[622px] h-fit flex flex-col gap-4 justify-start items-start p-2">
             {
                 reviews?.map((review: any, idx: any) => {
                     review['reviewerImageURL'] = review['reviewer_image_url']
